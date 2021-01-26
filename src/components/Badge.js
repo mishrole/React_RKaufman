@@ -1,24 +1,26 @@
 import React from 'react';
 
-import confLogo from '../images/badge-header.svg';
-import astronauts from '../images/astronauts.svg';
+import '../assets/styles/Badge.css';
+
+import confLogo from '../assets/images/badge-header.svg';
+import astronauts from '../assets/images/astronauts.svg';
 
 class Badge extends React.Component {
     render() {
-        return <div>
-                <div>
+        return <div className="Badge">
+                <div className="Badge__header">
                     <img src={confLogo} alt="Logo de la conferencia" />
                 </div>
-                <div>
-                    <img src="https://www.gravatar.com/avatar?d=identicon" alt="Avatar" />
+                <div className="Badge__section-name">
+                    <img className="Badge__avatar" src="https://avatars.githubusercontent.com/u/25912465?s=460&u=bd07abdf80ad067024ad07500a8ff2109cb186b5&v=4" alt="Avatar" />
                     <h1>Mitchell <br /> Rodríguez</h1>
                 </div>
-                <div>
-                    <p>Desarrollador Front-End en camino a Full-Stack</p>
-                    <p>@mishrole</p>
+                <div className="Badge__section-info">
+                    <h3>Desarrollador Front-End</h3>
+                    <div><a href="www.twitter.com/mishrole">@mishrole</a></div>
                 </div>
 
-                <div>
+                <div className="Badge__footer">
                     <p>#PlantziConf</p>
                 </div>
             </div> 
