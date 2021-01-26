@@ -8,7 +8,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-const element = <h1>Hello, Platzi Badges!</h1>;
+// Para usar JSX es requisito importar React
+// JSX Es mucho más legible y expresivo
+const jsx = <h1>Hello, Platzi Badges!</h1>;
+
+const element = React.createElement('a', { href: 'https://platzi.com' }, 'Ir a Platzi');
 
 const container = document.getElementById('app');
 
