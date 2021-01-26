@@ -3,7 +3,6 @@ import React from 'react';
 import '../assets/styles/components/Badge.css';
 
 import confLogo from '../assets/images/badge-header.svg';
-import astronauts from '../assets/images/astronauts.svg';
 
 class Badge extends React.Component {
     render() {

@@ -22,7 +22,7 @@ class BadgeNew extends React.Component {
         this.setState({
             // form: nextForm
             form: {
-                ... this.state.form,
+                ...this.state.form,
                 [e.target.name]: e.target.value,
             },
         })
