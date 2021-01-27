@@ -5,10 +5,12 @@ import Navbar from '../components/Navbar';
 function Layout(props) {
     // const children = props.children;
     return (
-    <div>
-        <Navbar/>
-        {props.children}
-    </div>
+        // Debemos retornar un solo elemento, por eso lo encapsulamos
+        // Ya sea en un div o un Fragment
+        <React.Fragment>
+            <Navbar/>
+            {props.children}
+        </React.Fragment>
      
     )
 }
