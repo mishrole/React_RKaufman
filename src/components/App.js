@@ -12,8 +12,6 @@ function App() {
     <BrowserRouter>
         <Layout>
             <Switch>
-                // Si no le especificamos que es exacta
-                // Asume que buscas el primero porque ambos empiezan igual
                 <Route exact path="/" component={Home} />
                 <Route exact path="/badges" component={Badges} />
                 <Route exact path="/badges/new" component={BadgeNew} />
