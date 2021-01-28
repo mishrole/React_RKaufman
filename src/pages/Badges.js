@@ -40,7 +40,8 @@ class Badges extends React.Component {
           ]
     }
 
-    constructor() {
+    constructor(props) {
+        super(props);
         console.log('1. constructor()')
     }
 
